@@ -1,0 +1,155 @@
+
+a{
+    text-decoration: none;
+}
+#nav {
+    z-index: 999;
+    background-color: #4f8fe6;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: fixed;
+    font-family: 'Martian Mono', monospace;
+    width: 100%;
+    top: 0;
+}
+
+.navel{
+    position:absolute;
+    width: 33.60%;
+    height: 100%;
+}
+.navimg{
+    position: absolute;
+    pointer-events: none;
+}
+
+.navtextnav{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+ 
+    margin: 0;
+    padding: 0;
+    padding-top: 100%;
+    left: 0;
+    bottom: 0;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    #nav{height: 70px;}
+    .navimg{
+        width: 50px;
+        right: 31%;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+    #nav{height: 70px;}
+    .navimg{
+        width: 55px;
+        right: 30%;
+    }
+    .navtextnav{
+        font-size: 16px;
+    }
+    
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    #nav{height: 60px;}
+    .navimg{
+        width: 40px;
+        right: 31%;
+    }
+    .navtextnav{
+        font-size: 13px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    #nav{height: 100px;}
+    .navimg{
+        width: 60px;
+        right: 40%;
+    }
+    .navtextnav{
+        font-size: 22px;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    #nav{height: 100px;}
+    .navimg{
+        width: 63px;
+        right: 43%;
+    }
+    .navtextnav{
+        font-size: 20px;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    #nav{height: 100px;}
+    .navimg{
+        width: 66px;
+        right: 40%;
+    }
+    .navtextnav{
+        font-size: 20px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+    #nav{height: 60px;}
+    .navimg{
+        width: 40px;
+        right: 47%;
+    }
+    .navtextnav{
+        font-size: 15px;
+    }
+}
+/*VK Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1000px) {
+    #nav{height: 60px;}
+    .navimg{
+        width: 50px;
+        right: 43%;
+    }
+    .navtextnav{
+        font-size: 15px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    #nav{height: 70px;}
+    .navimg{
+        width: 40px;
+        right: 47%;
+    }
+    .navtextnav{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,145 @@
+
+
+#centr{
+    position: relative;
+   
+    height: 500px;
+} 
+#textvmin{
+    font-weight: bold;
+    position: relative;
+    top: -15px;
+    font-size: 23px;
+}
+.elsdraw{
+    position: relative;
+    left: 4%;
+    width: 90%;
+    height: 70px;
+    border-radius: 5px;
+    margin-top: 9px;
+    background-color: #4f8de0;
+}
+.elimgdrw{
+  position: absolute;
+  border-radius: 4px;
+  padding: 10px;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  pointer-events: none;
+  height: 34px;
+  background-color: #477ec9;
+}
+.eldrawname{
+    position: relative;
+    text-align: start;
+    left: 85px;
+    width: 170px;
+    top: 13px;
+    font-weight: bold;
+}
+.eldrawnamenav{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    text-align: start;
+    padding-left: 85px;
+    left: 0;
+    width: 89%;
+    height: 74%;
+    top: 0;
+    padding-top: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+.eldrawdisc{
+    position: absolute;
+    pointer-events: none;
+    left: 85px;
+    bottom: -5px;
+    text-align: start;
+    width: 250px;
+    font-size: 17px;
+    color: #95c0fa;
+    font-weight: bold;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    #centr{
+        top: 60px;
+        left: 0%;
+        width: 100%;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+    #centr{
+        top: 60px;
+        left: 0%;
+        width: 100%;
+    }
+    
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    #centr{
+        top: 60px;
+        left: 0%;
+        width: 100%;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    #centr{
+        top: 90px;
+        left: 0%;
+        width: 100%;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+   
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+   
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+    #centr{
+        top: 60px;
+        left: 34%;
+        width: 30%;
+    }
+  
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    #centr{
+        top: 60px;
+        left: 34%;
+        width: 30%;
+    }
+}

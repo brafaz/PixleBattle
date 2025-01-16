@@ -1,0 +1,255 @@
+
+
+#backbar{
+    position: fixed;
+    background-color: #4b77a8;
+    width: 100%;
+    z-index: 9999;
+}
+#holstcolorsbar{
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    background-color: #4f8fe6;
+    width: 100%;
+    height: 90px;
+}
+#progrtimer{
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    height: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #33629e;
+}
+#progr{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    transition-property: width;
+    transition-duration: 1s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #1fdc10;
+}
+#loadiv{
+    position: fixed;
+    background-color: #33629e;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    color: #fff;
+    z-index: 99999;
+}
+#btnback{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+}
+#info{
+    position: fixed;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid #025497;
+    top: 12%;
+    left: 3px;
+    height: 70px;
+    z-index: 999;
+    display: none;
+    background-color: #01457ec5;
+}
+#infname{
+  padding: 0;margin: 0;
+  font-size: 17px;
+}
+#infname:hover,#infgroup:hover{
+    color: rgb(13, 0, 129);
+    cursor: pointer;
+}
+#infgroup{
+    padding: 0;margin: 0;
+    font-size: 17px;
+    padding-top: 8px;
+}
+#infcords{
+    position: absolute;
+    padding: 0;margin: 0;
+    font-size: 14px;
+    right: 4px;
+    bottom: 0;
+}
+#backstrelka{
+    position: absolute;
+    left: 44%;
+    padding: 0;
+    margin: 0;
+    top: 17%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+#cords{
+    position: relative;
+    width: 230px;
+    text-align: start;
+    font-weight: bold;
+}
+
+#holstbackgr{
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    background-color: #bebebe;
+    width: 100%;
+    height: 100%;
+}
+#holst{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    z-index: 99;
+    transform-origin: 0px 0px;
+    image-rendering: pixelated;
+}
+#grid{
+    position: absolute;
+    image-rendering: pixelated;
+    left: 0;
+    width: 1000px;
+    height: 1000px;
+    z-index: 999;
+    transform-origin: 0px 0px;
+    pointer-events: none;
+}
+#imggrid{
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: auto;
+    transform-origin: 0px 0px;
+    transform: translate(0px,0px);
+}
+
+#holstcolors{
+    position: relative;
+    top:35%;
+    height: 60%;
+    transition-property: transform;
+    transition-duration: 100ms;
+}
+.holstcolor{
+ 
+    display:inline-block;
+    position:relative;
+    padding: 0;
+    margin-left: 5px;
+    background-color: #51ff008a;
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 35px;
+    left: 0;
+    top: 13%;
+    cursor: pointer;
+    height: 70%;
+}
+#holstpixels{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    left: 42%;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+   #backbar{height: 70px;}
+   #cords{ left: 20%;}
+   #holstcolors{ width: 300%;translate: -60px;}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+    #backbar{height: 70px;}
+    #cords{ left: 20%;}
+    #holstcolors{ width: 300%;translate: -50px;}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    #backbar{height: 60px;}
+    #cords{ left: 20%;}
+    #holstcolors{ width: 400%;translate: -100px;}
+    
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    #backbar{height: 100px;}
+    #cords{ left: 20%;font-size: 25px;}
+    #holstcolors{ width: 150%;translate: -100px;}
+    
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    #backbar{height: 72px;}
+    #holstcolors{ width: 120%;translate: -100px;}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    #backbar{height: 100px;}
+    #holstcolors{ width: 160%;translate: -100px;}
+    #info{
+        top: 20%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+    #backbar{height: 60px;}
+    #cords{ left: 8%;}
+    #holstcolors{ width: 1200px;translate: -1px;}
+    #info{
+        top: 10%;
+    }
+    
+}
+/* VK Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1000px) {
+    #backbar{height: 60px;}
+    #cords{ left: 8%;}
+    #holstcolors{ width: 1200px;translate: -100px;}
+    #info{
+        top: 15%;
+    }
+    
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    #info{
+        top: 10%;
+    }
+    #backbar{height: 70px;}
+}

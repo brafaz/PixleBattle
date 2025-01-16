@@ -1,0 +1,158 @@
+
+
+
+#backbar{
+    position: fixed;
+    background-color: #4b77a8;
+    width: 100%;
+    z-index: 9999;
+}
+#bombsbar{
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    background-color: #4f8fe6;
+    width: 100%;
+    height: 80px;
+}
+
+.bombs{
+    padding: 0;
+    margin: 0;
+    margin-left: 2px;
+    padding-left: 10px;
+    position: relative;
+    align-items: center;
+    width: 55px;
+    left: 0;
+    display:inline-block;
+
+}
+#bombslist{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 60px;
+    top: 23%;
+}
+#btnback{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+}
+#bombcount{
+    position: absolute;
+    font-weight: bold;
+    left: 45%;
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+#gridpole{
+    position: absolute;
+    image-rendering: pixelated;
+    left: 0;
+    width: 1357px;
+    height: 628px;
+    z-index: 999;
+    transform-origin: 0px 0px;
+    pointer-events: none;
+}
+#backstrelka{
+    position: absolute;
+    left: 44%;
+    padding: 0;
+    margin: 0;
+    top: 17%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+#cords{
+    position: relative;
+    width: 230px;
+    text-align: start;
+}
+#mir{
+    position: absolute;
+    z-index: 99999;
+}
+#polebackgr{
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    background-color: #034cd4;
+    width: 100%;
+    height: 100%;
+}
+#holstpole{
+    position: absolute;
+    image-rendering: pixelated;
+    left: 0;
+    transform-origin: 0px 0px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+   #backbar{height: 70px;}
+   #cords{ left: 20%;}
+   #bombslist{width: 94%;left: 0%;}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+    #backbar{height: 70px;}
+    #cords{ left: 20%;}
+    #bombslist{width: 94%;left: 0%;}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    #backbar{height: 60px;}
+    #cords{ left: 20%;}
+    #bombslist{width: 120%;left: -10%;}
+    .bombs{width: 47px;}
+    
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    #backbar{height: 100px;}
+    #cords{ left: 20%;font-size: 25px;}
+    
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    #backbar{height: 72px;}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    #backbar{height: 100px;}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+    #backbar{height: 60px;}
+    #cords{ left: 8%;}
+    #bombslist{width: 94%;left: 0%;}
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    #backbar{height: 70px;}
+}

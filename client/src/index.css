@@ -1,0 +1,216 @@
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background:#529cff;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+            supported by Chrome, Edge, Opera and Firefox */
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Roboto Condensed', sans-serif;
+            color: #fff;
+}
+*{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+#notify{
+  position: fixed;
+  padding: 10px;
+  background-color: #0668b9;
+  border-radius: 10px;
+  border: 2px solid #013553;
+  z-index: 99999;
+  bottom: 10%;
+  
+  font-size: 18px;
+  height: 70px;
+  color: #fff;
+  pointer-events: none;
+  opacity:0;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+#reload{
+  position: fixed;
+  padding: 10px;
+  background-color: #3b6aac;
+  border-radius: 10px;
+  z-index: 9999;
+  bottom: 18%;
+  width: 110px;
+  font-size: 18px;
+  height: 25px;
+  text-align: end;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+#dialogbckg{
+  top:0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #00000091;
+  z-index: 999999;
+}
+::placeholder{
+  color: rgb(182, 182, 182);
+}
+#dialoginput{
+  position: relative;
+  height: 30px;
+  outline: none;
+  left:1%;
+  border: 2px solid #00578a;
+  border-radius: 20px;
+  background-color: #0091e6;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#dialoginput:hover{
+  background-color: #06a4ff;
+}
+#dialogtext{
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  height: 120px;
+}
+#dialogclose{
+  position: absolute;
+  background-color: #e90e06;
+  border: 2px solid rgb(156, 0, 0);
+  border-radius: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 100px;
+  bottom: 6px;
+  right: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color:#fff;
+}
+#dialogclose:hover{
+  background-color: #ac0601;
+  border: 2px solid rgb(141, 3, 3);
+  color:rgb(194, 194, 194);
+  cursor: pointer;
+}
+#dialogok{
+  position: absolute;
+  background-color: #0683e9;
+  border: 2px solid #025396;
+  border-radius: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 100px;
+  bottom: 6px;
+  left: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color:#fff;
+}
+#dialogok:hover{
+  background-color: #0462af;
+  border: 2px solid #003866;
+  cursor: pointer;
+  color:rgb(138, 138, 138);
+}
+#dialog{
+  position: fixed;
+  width: 250px;
+  border: 3px solid #01588a;
+  height: 250px;
+  border-radius: 30px;
+  
+  z-index: 9999999999;
+  background-color: #0668b9;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  #notify{width: 78%;left: 8%;}
+  #dialog{left: 16%;
+    top:30%;}
+    #reload{left: 36%; bottom: 105px;}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  #notify{width: 78%;left: 8%;}
+  #dialog{left: 17%;
+    top:30%;}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+  #notify{width: 78%;left: 8%;}
+  #dialog{left: 4%;
+    top:30%;}
+    #reload{left: 36%; bottom: 105px;}
+    
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  #dialog{left: 36%;
+    top:30%;}
+  #notify{width: 78%;left: 8%;}
+  #reload{left: 40%; bottom: 105px;}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  #notify{width: 30%;left: 32%;}
+  #dialog{left: 36%;
+    top:30%;}
+    #reload{left: 40%;bottom: 105px;}
+}
+/* vk Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1000px) {
+  #notify{width: 30%;left: 32%;}
+  #dialog{left: 36%;
+    top:30%;}
+    #reload{left: 40%; bottom: 105px;}
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    
+}
